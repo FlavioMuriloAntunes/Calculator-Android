@@ -35,9 +35,28 @@ public class MainActivity extends AppCompatActivity {
         String opera = editOpera.getText().toString();
         double resultado = 0;
 
+
+
+
+
+
+
+
+
+
+
         switch (opera) {
             case "+":
             resultado = number1 + number2;
+                break;
+            case "-":
+                resultado = number1 - number2;
+                break;
+            case "*":
+                resultado = number1 * number2;
+                break;
+            case "/":
+                resultado = number1 / number2;
                 break;
         }
 

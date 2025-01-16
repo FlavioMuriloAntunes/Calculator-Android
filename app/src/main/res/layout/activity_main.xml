@@ -6,51 +6,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="30dp"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#6E0FC7"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layoutDirection="ltr"
+        android:text="Numero" />
 
     <EditText
         android:id="@+id/editNumero1"
-        android:layout_width="match_parent"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:ems="10"
         android:inputType="number|numberDecimal"
-        android:paddingStart="30dp"
-        android:text="numero 1" />
+        android:paddingStart="30dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Operador" />
 
     <EditText
         android:id="@+id/editOpera"
-        android:layout_width="match_parent"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Operação" />
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Numero" />
 
     <EditText
         android:id="@+id/editNumero2"
-        android:layout_width="match_parent"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="number|numberDecimal"
-        android:paddingStart="30dp"
-        android:text="numero 2" />
+        android:inputType="number|numberDecimal" />
 
     <TextView
         android:id="@+id/textResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="resultado:" />
+        android:layout_marginTop="20dp"
+        android:text="Resultado:"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="78dp"
-        android:layout_margin="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="Calcular"
         android:rotationX="18"
+        android:text="calcular"
         android:textColor="#CDDC39"
         android:textSize="20sp"
+        app:iconTint="#522929"
         app:rippleColor="#3BFF76"
         tools:text="Calcular" />
 
